@@ -1,0 +1,188 @@
+html,body{
+    background-color: #efefef;
+}
+i{
+    font-style: normal;
+}
+header{
+    width: 37.5rem;
+    height: 11.9rem;
+    background: url("../images/banner.png") center no-repeat;
+    background-size: cover;
+}
+section .content{
+    margin-bottom: 1rem;
+}
+section .content ul{
+    box-sizing: border-box;
+    padding: 1rem 2.3rem 0 1rem;
+    width: 37.5rem;
+    height: 11.7rem;
+    background-color: #ffffff;
+}
+section .content ul li{
+    position: relative;
+    width: 36.5rem;
+    height: 2rem;
+}
+section .content ul li:nth-child(2){
+    margin: 0.8rem 0;
+    height: 4rem;
+}
+section .content ul li span{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: block;
+    width: 0.2rem;
+    height: 1rem;
+    background-color: #0086cf;
+}
+section .content ul li:nth-child(2) span{
+    bottom: 2rem;
+    background-color: #ffb54b;
+}
+section .content ul li:nth-child(3) span{
+    background-color: #77af38;
+}
+section .content ul li:nth-child(3) p i{
+    color: #0086cf;
+}
+section .content ul li p{
+    margin-left: 1rem;
+    line-height: 2rem;
+    float: left;
+    font-size: 1.4rem;
+    color: #333333;
+}
+section .content ul li p:nth-child(3){
+    margin-left: 0;
+}
+/*错误提示*/
+section .wraning{
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    right:0;
+    margin: auto;
+    width: 12.25rem;
+    height: 3.05rem;
+    background: url("../images/warning.png") center no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+/*输入部分*/
+section .write{
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 0.05rem;
+    padding-left: 1rem;
+    width: 37.5rem;
+    height: 3.8rem;
+    background-color: #ffffff;
+}
+section .write label{
+    display: inline-block;
+    width: 12rem;
+    height: 3.8rem;
+    font-size: 1.4rem;
+    text-align: right;
+    line-height: 3.8rem;
+    color: #333333;
+}
+section .write input{
+    border: none;
+    font-size: 1.4rem;
+}
+section .write span{
+    position: absolute;
+    right: 2rem;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+}
+section .first.write span{
+    width: 8.3rem;
+    height: 2.6rem;
+    border: 0.1rem solid #0086cf;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+    color: #0086cf;
+}
+section .second.write span{
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url("../images/check.png") center no-repeat;
+    background-size: cover;
+}
+section .second.write #wron{
+    background: url("../images/wron.png") center no-repeat;
+    background-size: cover;
+}
+section .message{
+    box-sizing: border-box;
+    padding-top: 1rem;
+    width: 37.5rem;
+    height: 12.6rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+section .message p{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    color: #999999;
+}
+section .message .submit{
+    margin: 1.5rem auto;
+    width: 30.5rem;
+    height: 3.8rem;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 3.8rem;
+    border-radius: 0.3rem;
+    color: #ffffff;
+    background-color: #0086cf;
+}
+footer{
+    width: 37.5rem;
+    background-color: #ffffff;
+}
+footer .title{
+    margin-bottom: 1.3rem;
+    font-size: 1.2rem;
+    color: #333333;
+    text-align: center;
+}
+footer .title span:nth-child(2){
+    margin: 0 1.4rem;
+}
+footer .title span:first-child,footer .title span:last-child{
+    display: inline-block;
+    width: 5.5rem;
+    border-bottom: 0.05rem solid #333333;
+}
+footer .content{
+    padding-bottom: 3rem;
+}
+footer .content ul{
+    padding: 0 2.75rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #333333;
+}
+footer .content .more{
+    margin: 0 auto;
+    width: 10rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #0086cf;
+}
+footer .content .moreList{
+    display: none;
+}
