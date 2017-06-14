@@ -7,7 +7,15 @@
 })(window);
 
 $(function () {
-
+    //一键QQ登录
+    $('#entryForQQ').on('touchend',function () {
+        window.location.href = '';
+    });
+    //立即订购
+    $('.submit').on('touchend',function () {
+        window.location.href = '';
+    });
+    //用户输入验证交互
     $('#secondInput').on('input',function () {
         if($(this).val() == $('#firstInput').val()){
             $('#wron').hide();
