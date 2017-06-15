@@ -34,11 +34,10 @@ $(function () {
         }
     });
     $('#secondInput').on('blur',function () {
+        $(this).val() == '' ? $(this).context.placeholder = '请再次输入您的QQ号码':null;
         if($(this).val() != $('#firstInput').val()){
             $('.wraning').fadeIn().delay(800).fadeOut();
             $('#wron').show();
-        }else if($(this).val() == ''){
-            $(this).context.placeholder = '请再次输入您的QQ号码';
         }else{
             $('#wron').hide();
         }
@@ -65,10 +64,9 @@ $(function () {
         }
     });
     $('#firstInput').on('blur',function () {
+        $(this).val() == '' ? $(this).context.placeholder = '请输入您的QQ号码':null;
         if($(this).val() != $('#secondInput').val()){
 
-        }else if($(this).val() == ''){
-            $(this).context.placeholder = '请输入您的QQ号码';
         }else{
             $('#wron').hide();
         }
