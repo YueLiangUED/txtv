@@ -1,0 +1,57 @@
+/*成功和失败页样式*/
+html,body{
+    background-color: #f6f6f6;
+}
+.succAndfail{
+    box-sizing: border-box;
+    padding-top: 6.8rem;
+    width: 37.5rem;
+    height: 25.4rem;
+    text-align: center;
+}
+.succAndfail span{
+    margin: 0 auto 2rem;
+    display: block;
+}
+.succAndfail.success span{
+    width: 7.25rem;
+    height: 7.25rem;
+    background: url("../images/success.png") center no-repeat;
+    background-size: cover;
+}
+.succAndfail.fail span{
+    width: 7.1rem;
+    height: 7.1rem;
+    background: url("../images/fail.png") center no-repeat;
+    background-size: cover;
+}
+.succAndfail p{
+    font-size: 1.6rem;
+}
+.succAndfail.success p{
+    color: #77af38;
+}
+.succAndfail.fail p{
+    color: #cf5e5e;
+}
+.succAndfail.fail i{
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 4rem;
+    color: #cf5e5e;
+}
+.button{
+    width: 37.5rem;
+}
+.button span{
+    display: block;
+    margin: 0 auto;
+    width: 30.5rem;
+    height: 3.8rem;
+    font-size: 1.6rem;
+    line-height: 3.8rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    color: #ffffff;
+    background-color: #0086cf;
+}

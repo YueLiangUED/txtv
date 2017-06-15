@@ -80,4 +80,13 @@ $(function () {
         $(this).hide();
         $('.moreList').slideDown(500);
     });
+
+    //成功页确认按钮
+    $('#sucBtn').click(function () {
+        window.location.href = '';
+    });
+    //失败页确认按钮
+    $('#failBtn').click(function () {
+        window.location.href = '';
+    });
 });
