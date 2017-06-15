@@ -97,6 +97,9 @@ section .write input{
     border: none;
     font-size: 1.4rem;
 }
+::-webkit-input-placeholder{
+    color: #e5e5e5;
+}
 section .write span{
     position: absolute;
     right: 2rem;
@@ -146,6 +149,10 @@ section .message .submit{
     text-align: center;
     line-height: 3.8rem;
     border-radius: 0.3rem;
+    color: rgb(153,153,153);
+    background-color: #dfdfdf;
+}
+section .message .submit.active{
     color: #ffffff;
     background-color: #0086cf;
 }
@@ -175,6 +182,10 @@ footer .content ul{
     font-size: 1.2rem;
     line-height: 2rem;
     color: #333333;
+}
+footer .content ul li{
+    text-align:justify;
+    text-justify: inter-ideograph;
 }
 footer .content .more{
     margin: 0 auto;
