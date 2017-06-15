@@ -7,10 +7,6 @@
 })(window);
 
 $(function () {
-    //一键QQ登录
-    $('#entryForQQ').on('touchend',function () {
-        window.location.href = '';
-    });
     //立即订购
     $('.submit').on('touchend',function () {
         if($(this).hasClass('active')){
