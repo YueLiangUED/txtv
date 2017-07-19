@@ -8,10 +8,24 @@
 
 $(function () {
     //立即订购
-    $('.submit').on('touchend',function () {
+    $('.submit').on('click',function () {
         if($(this).hasClass('active')){
-            window.location.href = '';
+            $('.queryBox').slideDown();
+            showMask();
+            //确认上拉框中手机号绑定
+            $('#phoneNum').text();
+            //确认上拉框中QQ号码绑定
+            $('#qqNum').text($('#secondInput').val());
         }
+    });
+    //上拉框确认开通按钮
+    $('.queryBtn').on('click',function () {
+        window.location.href = '';
+    });
+    //点击上拉框外隐藏遮罩
+    $('#mask').on('click',function () {
+        $('.queryBox').slideUp();
+        hideMask();
     });
     //用户输入验证交互
     $('#secondInput').on('input',function () {
@@ -67,15 +81,28 @@ $(function () {
             $('#wron').hide();
         }
     });
+    
     //input获取焦点隐藏placeholder内容
     $('input[type=text]').on('focus',function () {
         $(this).context.placeholder = '';
     });
+
     //点击加载更多
     $('.more').on('touchend',function () {
         $(this).hide();
         $('.moreList').slideDown(500);
     });
+
+    //显示遮罩层    
+    function showMask(){
+        $("#mask").css("height",$(document).height());
+        $("#mask").css("width",$(document).width());
+        $("#mask").show();
+    }
+    //隐藏遮罩层  
+    function hideMask(){
+        $("#mask").hide();
+    }
 
     //成功页确认按钮
     $('#sucBtn').click(function () {
