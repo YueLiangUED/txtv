@@ -90,7 +90,14 @@ $(function () {
     //点击加载更多
     $('.more').on('touchend',function () {
         $(this).hide();
+        $('.hide').show();
         $('.moreList').slideDown(500);
+    });
+    //点击收起
+    $('.hide').on('touchend',function () {
+        $(this).hide();
+        $('.more').show();
+        $('.moreList').slideUp(500);
     });
 
     //显示遮罩层    

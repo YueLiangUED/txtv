@@ -26,8 +26,7 @@ section .content ul li{
     height: 2rem;
 }
 section .content ul li:nth-child(2){
-    margin: 0.8rem 0;
-    height: 4rem;
+    height: 2rem;
 }
 section .content ul li span{
     position: absolute;
@@ -41,7 +40,6 @@ section .content ul li span{
     background-color: #0086cf;
 }
 section .content ul li:nth-child(2) span{
-    bottom: 2rem;
     background-color: #ffb54b;
 }
 section .content ul li:nth-child(3) span{
@@ -187,7 +185,10 @@ footer .content ul li{
     text-align:justify;
     text-justify: inter-ideograph;
 }
-footer .content .more{
+footer .content .hide{
+    display: none;
+}
+footer .content .more,footer .content .hide{
     margin: 0 auto;
     width: 10rem;
     text-align: center;
