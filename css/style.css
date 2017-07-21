@@ -142,7 +142,7 @@ section .message p{
     color: #999999;
 }
 section .message .submit{
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     width: 30.5rem;
     height: 3.8rem;
     font-size: 1.6rem;
@@ -185,7 +185,7 @@ footer .title span:first-child,footer .title span:last-child{
     border-bottom: 1px solid #333333;
 }
 footer .content{
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
 }
 footer .content ul{
     padding: 0 2.75rem;
