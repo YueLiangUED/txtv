@@ -22,7 +22,7 @@ section .content ul{
 section .content ul li{
     position: relative;
     width: 36.5rem;
-    height: 2rem;
+    height: 2.5rem;
 }
 section .content ul li:nth-child(1) p{
     color: #232323;
@@ -52,7 +52,7 @@ section .content ul li:nth-child(3) p i{
 }
 section .content ul li p{
     margin-left: 1rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     float: left;
     font-size: 1.4rem;
     color: #333333;
